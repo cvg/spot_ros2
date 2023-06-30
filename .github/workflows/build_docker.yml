@@ -2,8 +2,6 @@ name: Build and publish Jammy/Humble Docker image
 
 on:
   pull_request:
-    paths:
-      - ".devcontainer/**"
   push:
     branches:
       - main
@@ -12,7 +10,7 @@ env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: ghcr.io
   # github.repository as <account>/<repo>
-  IMAGE_NAME: bdaiinstitute/spot_ros2_jammy_humble
+  IMAGE_NAME: cvg/spot_ros2
 
 jobs:
   build:
