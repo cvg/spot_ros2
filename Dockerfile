@@ -2,7 +2,7 @@ FROM ros:humble
 
 RUN sudo apt-get update && sudo apt-get install -y wget python3-pip
 RUN python3 -m pip install --upgrade pip
-RUN python3 -m pip install --upgrade numpy
+RUN python3 -m pip install --upgrade numpy aiortc
 RUN mkdir -p /ros2_ws/src
 
 COPY . /ros2_ws/src/spot_ros2
